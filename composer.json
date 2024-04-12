@@ -1,0 +1,28 @@
+{
+  "name": "me-io/appium-selenium-starter",
+  "description": "Simple and easy to use boilerplate for writing tests for mobile or web.",
+  "keywords": [
+    "test",
+    "testing",
+    "unit",
+    "unit-testing",
+    "appium",
+    "selenium",
+    "mobile-testing",
+    "android-testing",
+    "ios-testing",
+    "boilerplate"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "me-io/selenium-appium-server": "~1",
+    "me-io/appium-codeception": "^1.0"
+  },
+  "scripts": {
+    "appium": "./vendor/me-io/selenium-appium-server/bin/appium.sh",
+    "selenium": "./vendor/me-io/selenium-appium-server/bin/selenium.sh"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

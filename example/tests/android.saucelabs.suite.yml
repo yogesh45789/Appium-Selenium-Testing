@@ -1,0 +1,37 @@
+# For saucelabs
+class_name: AndroidGuy
+modules:
+  enabled:
+    - \Helper\AndroidHelper
+    - \Appium\AppiumDriver
+    - Asserts
+
+  config:
+    \Appium\AppiumDriver:
+      host: 'eu1.appium.testobject.com'
+      port: 80
+      dummyRemote: false
+      ## before suite / Android / android
+      resetAfterSuite: true
+      ## before scenarAndroid
+      resetAfterCest: false
+      ## before every test
+      resetAfterTest: true
+      ## before every step
+      resetAfterStep: false
+      capabilities:
+        testobject_api_key: '4A6891ACD38E4BF5905956B6506FB21C'
+        platformName: 'Android'
+        platformVersion: '8.1'
+        deviceName: 'LG Nexus 5X Free'
+        phoneOnly: false
+        tabletOnly: false
+        privateDevicesOnly: false
+        fullReset: false
+        noReset: false
+        newCommandTimeout: 7200
+        nativeInstrumentsLib: true
+        connection_timeout: 500
+        request_timeout: 500
+        autoAcceptAlerts: true
+        skipUnlock: true
